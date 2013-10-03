@@ -1,0 +1,44 @@
+#Upload {
+    width: 70em;
+    min-height: 30em;
+    margin: 1em auto;
+    padding:0 2em 2em 2em ;
+    border:1px solid #bbb;
+    color: #333;
+    background-color: #bbbbbb;
+    font: 0.9em verdana, sans-serif;
+    box-shadow: inset 0px 0.3em 1em rgb(0, 0, 0);
+    -moz-border-radius: 3em;
+    border-radius: 3em;
+}
+#image{
+    width: 75%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    -moz-border-radius: 3em;
+    border-radius: 1em;
+    box-shadow: 0px 0.3em 1em rgb(0, 0, 0);
+
+}
+
+#Upload h1{
+    font: 1.4em bold verdana, sans-serif;
+    margin: 0;
+    padding:1em 0;
+    text-align:center;
+}
+#Upload label{
+    float: left;
+    width: 7em;
+}
+
+#Upload p#controls input{
+
+    border-width: 1px;
+    border-color: black;
+    display: block;
+    margin: auto;
+    clear: both;
+}
