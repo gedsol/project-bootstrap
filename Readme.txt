@@ -1,2 +1,2 @@
-//Vienas du trys keturi penki
+Vienas du trys keturi penki
 nulis
