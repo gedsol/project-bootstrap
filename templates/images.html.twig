@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    Galerija
+{% endblock %}
+{% block content %}
+    <ul id="imageGrid">
+        {% for image in images %}
+            <li class="image">
+                    <img src="{{ image }}">
+            </li>
+        {% endfor %}
+    </ul>
+    {% if auth %}
+        {% block uploadForm %}
+            <form id="upload" action="Upload.php" enctype="multipart/form-data" method="post">
+                <p id="controls">
+                    <input type="file" name="file" accept="image/*">
+                    <input type="text" name="name">
+                    <input type="text" name="description">
+                    <input type="date" name="taken">
+                    <input type="submit" name="submit" value="Upload">
+                </p>
+            </form>
+            <form id='upload' action="Delete.php" enctype="multipart/form-data" method="post">
+                <p id="controls">
+                    <input type="number" name="imageId">
+                    <input type="Submit" name="Submit" value="Delete">
+                </p>
+            </form>
+        {% endblock %}
+    {% endif %}
+{% endblock %}
